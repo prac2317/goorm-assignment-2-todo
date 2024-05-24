@@ -4,49 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div>
-      <div class="head">
-        <h2>
-          Todos 앱
-        </h2>
-        <div>새로운 TODO 추가하기</div>
+    <main>
+      <div class="app">
+        <header>
+          <h1>Todos 앱</h1>
+          <button id="create-btn">새로운 todo 추가하기</button>
+        </header>
+
+        <div class="todo-list" id="list"></div>
       </div>
-      <div class="body">
-        <div class="todoList">
-        </div>
-      </div>
-    <script>
-      const data = [
-        {
-          id : 1,
-          name : "밥먹기",
-        },
-        {
-          id : 2,
-          name : "휴식",
-        },
-        {
-          id : 3,
-          name : "공부하기",
-        },
-        {
-          id : 4,
-          name : "취침",
-        }
-      ]
-      function newTodo() {
-
-      }
-
-      function renderTodo() {
-        const todoList = document.getElementById("todoList");
-        data.map(todo => {
-          
-        })
-      }
-
-    </script>
+    </main>
+    <script src="script.js"></script>
   </body>
 </html>
